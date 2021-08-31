@@ -29,7 +29,7 @@ USE AdventureWorks2012;
 GO  
 IF EXISTS(SELECT name FROM sys.objects  
           WHERE name = N'dbo.sp_HexToChar')  
-    DROP PROCEDURE HexToChar;  
+    DROP PROCEDURE sp_HexToChar;  
 GO  
 CREATE PROCEDURE dbo.sp_HexToChar  
     @BinValue varbinary(255),  
